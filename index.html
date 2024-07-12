@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Loki Odinson</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <header>
+        <h1 id="date-time">
+          <script>
+            function formatDate(date) {
+              return `N50°56'28.014"-E6°57'24.7104"•IST•${new Date().toLocaleTimeString(
+                "en-GB",
+                { hour: "2-digit", minute: "2-digit", hour12: false }
+              )}`;
+            }
+            const today = new Date();
+            const formattedOutput = formatDate(today);
+            document.getElementById("date-time").innerHTML = formattedOutput;
+          </script>
+        </h1>
+
+        <div class="websiteTitle">
+          <h3>MINI PROJECT FOR CUVETTE</h3>
+        </div>
+      </header>
+      <img src="./images/loki.png" alt="loki himself" class="lokiImg" />
+
+      <h1 class="title firstName">Loki</h1>
+
+      <h1 class="title lastName">Odinson</h1>
+
+      <div class="info-col">
+        <div class="info">
+          <h2><b>ALSO</b></h2>
+          <p>God of Mischief</p>
+          <p>VARIANT - L1130</p>
+          <p>TOM HIDDLESTON</p>
+        </div>
+
+        <div class="info">
+          <h2><b>ABOUT</b></h2>
+          <p>FROM - JOTUNHEIM</p>
+          <p>RACE - FROST GIANT</p>
+          <p>HEIGHT - 6'2" (1.88m)</p>
+          <p>EYE COLOUR - Blue</p>
+          <p>SEX - FLUID</p>
+        </div>
+        <div class="info">
+          <h2><b>INFLUENCE ON</b></h2>
+          <p>VOID</p>
+          <p>REALM OF ASGARD</p>
+          <p>REALM OF EARTH</p>
+          <p>TIME BETWEEN TIMES</p>
+        </div>
+        <div class="info">
+          <h2><b>SECTOR I900-2099</b></h2>
+          <p>WEBSITE IS NOT RESPONSIVE</p>
+          <p>FOR NOW</p>
+        </div>
+      </div>
+
+      <div class="nameInJapanese">
+        <h1><b> ルッキ オディンソン</b></h1>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="middle">
+        <img src="./images/helmet.svg" class="helmet" alt="helmet" />
+        <div class="helmet-desc">
+          <h1>COOL</h1>
+          <h1>LOOKING</h1>
+          <h1>HELMET</h1>
+          <p>ALSO MADE BY ME</p>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="skills">1</div>
+        <div class="skills">2</div>
+        <div class="skills">3</div>
+        <div class="skills">4</div>
+        <div class="skills">5</div>
+        <div class="skills">6</div>
+      </div>
+    </section>
+
+    <hr />
+    <footer class="footer">
+      <img
+        class="miss-minutes"
+        src="./images/miss-minutes.png"
+        alt="miss-minutes"
+      />
+      <p>FOR ALL TIME. ALWAYS</p>
+    </footer>
+  </body>
+</html>
