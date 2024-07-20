@@ -1,26 +1,53 @@
+@font-face {
+  font-family: "ModeSeven";
+  src: url("./fonts/ModeSeven.ttf") format("truetype");
+
+  font-family: "Neuropolitical";
+  src: url("./fonts/Neuropolitical.otf") format("truetype");
+}
 * {
   font-family: "ModeSeven", monospace;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-color: #5cff9d;
   --secondary-color: #ffe100;
-  --white: #ffffff;
-  --black: #000000;
-  --text-primary: #282828;
-}
-
-html {
-  max-width: 100%;
-  overflow-x: hidden;
+  --background-color: #0b1510;
 }
 
 body {
+  transition: all;
   color: var(--primary-color);
+  animation: coolBg 1.5s ease;
   padding: 3em;
-  background-color: #0b1510;
+  background-color: var(--background-color);
+  -webkit-animation: coolBg 1.5s ease;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+}
+
+@keyframes coolBg {
+  0% {
+    background-color: rgb(214, 0, 0);
+  }
+
+  25% {
+    background-color: var(--secondary-color);
+  }
+  50% {
+    background-color: teal;
+  }
+  75% {
+    background-color: rebeccapurple;
+  }
+  100% {
+    background-color: var(--background-color);
+  }
 }
 
 header {
@@ -120,7 +147,7 @@ header {
   z-index: 2;
   position: absolute;
   font-size: 2em;
-  color: #0b1510;
+  color: var(--background-color);
   transform: skew(-20deg);
   text-align: right;
   padding: 0.5rem 3rem;
