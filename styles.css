@@ -24,7 +24,7 @@ body {
   animation: coolBg 1.5s ease;
   padding: 3em;
   background-color: var(--background-color);
-  -webkit-animation: coolBg 1.5s ease;
+  -webkit-animation: coolBg 0.5s ease-in;
   -webkit-transition: all;
   -moz-transition: all;
   -ms-transition: all;
@@ -36,13 +36,11 @@ body {
     background-color: rgb(214, 0, 0);
   }
 
-  25% {
+  33% {
     background-color: var(--secondary-color);
   }
-  50% {
-    background-color: teal;
-  }
-  75% {
+
+  66% {
     background-color: rebeccapurple;
   }
   100% {
@@ -218,25 +216,33 @@ header {
 }
 
 .skills {
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 4px solid var(--primary-color);
-  padding: 4rem;
-  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .skills:hover {
   border: 4px solid var(--secondary-color);
   background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 0;
   transition: 1s ease;
   -webkit-transition: 1s ease;
   -moz-transition: 1s ease;
   -ms-transition: 1s ease;
   -o-transition: 1s ease;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .miss-minutes {
@@ -262,6 +268,13 @@ hr {
   gap: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+.skills a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--background-color);
 }
 
 /* LANDSCAPE TABLETS */
