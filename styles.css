@@ -287,14 +287,84 @@ hr {
 /* LANDSCAPE TABLETS */
 @media all and (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-color: red;
+    padding: 2rem;
+  }
+
+  .lokiImg {
+    height: 100vh;
+    right: -20%;
+  }
+
+  .firstName {
+    font-size: 12rem;
+  }
+  .lastName {
+    font-size: 11rem;
+  }
+  #date-time {
+    font-size: 2rem;
+  }
+
+  .websiteTitle {
+    margin-left: 0%;
+    font-size: 1rem;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nameInJapanese {
+    font-size: 1.2rem;
+    right: -5%;
+    overflow-y: hidden;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem 0.5rem;
   }
 }
 
 /* TABLETS */
 @media all and (min-width: 480px) and (max-width: 768px) {
   body {
-    background-color: pink;
+    padding: 1rem;
+  }
+
+  .lokiImg {
+    height: 100vh;
+    right: -40%;
+  }
+
+  .firstName {
+    font-size: 10rem;
+  }
+  .lastName {
+    font-size: 9rem;
+  }
+  #date-time {
+    font-size: 2rem;
+  }
+
+  .websiteTitle {
+    margin-left: 0%;
+    font-size: 1rem;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nameInJapanese {
+    font-size: 1.2rem;
+    right: -5%;
+    overflow-y: hidden;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem 0.5rem;
   }
 }
 
