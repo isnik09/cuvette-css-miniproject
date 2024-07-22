@@ -1,7 +1,9 @@
 @font-face {
   font-family: "ModeSeven";
   src: url("./fonts/ModeSeven.ttf") format("truetype");
+}
 
+@font-face {
   font-family: "Neuropolitical";
   src: url("./fonts/Neuropolitical.otf") format("truetype");
 }
@@ -10,6 +12,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
 }
 
 :root {
